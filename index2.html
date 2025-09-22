@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Различные типы ссылок в HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="photo_2025-03-26_23-56-09.jpg" alt="Логотип" class="logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <h1>Различные типы HTML-ссылок</h1>
+    
+    <div class="section">
+        <h2>1. Абсолютная гиперссылка на главную страницу сайта kubsu.ru</h2>
+        <div class="example">
+            <a href="http://kubsu.ru">Кубанский государственный университет</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Абсолютная ссылка на главную сайта kubsu.ru в протоколе https</h2>
+        <div class="example">
+            <a href="https://kubsu.ru">КубГУ (безопасное соединение)</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Ссылка-изображение</h2>
+        <div class="example">
+            <a href="https://kubsu.ru">
+                <div class="image1">
+                    <img src="image.jpg" alt="Логотип КубГУ">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Сокращенная ссылка на внутреннюю страницу</h2>
+        <div class="example">
+            <a href="/about">О нас</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Сокращенная ссылка на главную страницу</h2>
+        <div class="example">
+            <a href="/">Главная страница</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Ссылка на фрагмент текущей страницы</h2>
+        <div class="example">
+            <a href="#fragment">Перейти к фрагменту страницы</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Ссылка с тремя параметрами в URL</h2>
+        <div class="example">
+            <a href="https://example.com/search?q=html&sort=date&page=2">Поиск с параметрами</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Ссылка с параметром id в URL</h2>
+        <div class="example">
+            <a href="https://example.com/user?id=12345">Профиль пользователя</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Относительная ссылка на страницу в текущем каталоге</h2>
+        <div class="example">
+            <a href="contacts.html">Контакты</a> 
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Относительная ссылка на страницу в каталоге about</h2>
+        <div class="example">
+            <a href="about/page.html">История компании</a> 
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>11. Относительная ссылка на страницу в каталоге уровнем выше текущего</h2>
+        <div class="example">
+            <a href="../index.html">Главная сайта</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>12. Относительная ссылка на страницу в каталоге двумя уровнями выше</h2>
+        <div class="example">
+            <a href="../../admin/dashboard.html">Панель администратора</a>
+            </div>
+    </div>
+
+    <div class="section">
+        <h2>13. Контекстная ссылка в тексте абзаца</h2>
+        <div class="example">
+            <p>Одним из ведущих учебных заведений на юге России является <a href="https://kubsu.ru">Кубанский государственный университет</a>, который готовит специалистов по различным направлениям.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>14. Ссылка на фрагмент страницы стороннего сайта</h2>
+        <div class="example">
+            <a href="https://ru.wikipedia.org/wiki/HTML#Версии">HTML на Википедии </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>15. Ссылки из прямоугольных и круглых областей картинки</h2>
+        <div class="example">
+             <img src="image.jpg" alt="изображение" usemap="#imagemap">
+             <div class="img2">
+               <map name="imagemap">
+                    <area shape="rect" coords="0,0,200,200" href="https://kubsu.ru" alt="Прямоугольная область">
+                    <area shape="circle" coords="300,100,50" href="https://kubsu.ru" alt="Круглая область">
+                </map>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>16. Ссылка с пустым href</h2>
+        <div class="example">
+            <a href="">Ссылка никуда не ведущая</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>17. Ссылка без href</h2>
+    </div>
+
+    <div class="section">
+        <h2>18. Ссылка, по которой запрещен переход поисковикам</h2>
+        <div class="example">
+            <a href="https://example.com/private-page" rel="nofollow">Приватная страница</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>19. Ссылка, запрещенная для индексации поисковиками</h2>
+        <div class="example">
+            <a href="https://example.com/no-index" rel="noindex">Не индексировать эту страницу</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>20. Нумерованный список ссылок с подписями title</h2>
+        <div class="example">
+            <ol>
+                <li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                <li><a href="https://kubsu.ru/en" title="English version of KubSU website">KubSU English version</a></li>
+                <li><a href="https://kubsu.ru/abitur" title="Информация для абитуриентов">Поступление в КубГУ</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>21. Ссылка на файл на сервере FTP с авторизацией</h2>
+        <div class="example">
+            <a href="ftp://username:password@ftp.example.com/file.zip">Скачать файл с FTP</a>
+        </div>
+    </div>
+
+    <div id="fragment" class="section">
+        <h2>Фрагмент страницы</h2>
+    </div>
+
+
+
+
+<div class="form-container">
+        <h2 class="form-title">Форма регистрации</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fio">ФИО <span class="required">*</span></label>
+                <input type="text" id="fio" name="fio" required placeholder="Введите ваше полное имя">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Дата рождения <span class="required">*</span></label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Пол <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Женский
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="languages">Любимый язык программирования</label>
+                <select id="languages" name="languages" multiple size="5">
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Биография</label>
+                <textarea id="bio" name="bio" placeholder="Расскажите о себе..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="agreement" required> С контрактом ознакомлен(а) <span class="required">*</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+
+    <footer>
+    <p>Ефремов Марк</p>
+  </footer>
+
+
+</body>
+</html>
